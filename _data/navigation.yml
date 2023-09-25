@@ -1,0 +1,25 @@
+# main links links
+main:
+  - title: "Publications"
+    url: /publications/
+
+  # - title: "Talks"
+  #   url: /talks/    
+
+  # - title: "Teaching"
+  #   url: /teaching/    
+    
+  # - title: "Portfolio"
+  #   url: /portfolio/
+        
+  - title: "Projects"
+    url: /projects/
+        
+  # - title: "Blog Posts"
+  #   url: /year-archive/
+    
+  - title: "CV"
+    url: /files/Lehong_Wang_CV_Sep_2023.pdf
+    
+  # - title: "Guide"
+  #   url: /markdown/
