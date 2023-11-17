@@ -1,0 +1,162 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects_archive/
+author_profile: true
+---
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <style>
+
+        .section {
+            display: flex;
+            align-items: center;
+            /* justify-content: space-between; */
+            /* padding: 20px; */
+            /* background-color: #f0f0f0; */
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* .section img {
+            max-width: 100%;
+            height: auto;
+            margin-right: 20px;
+        } */
+
+        .content {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 9]><div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+        <div class="archive">
+            <h1 class="page__title">Research</h1>
+
+            <p align="justify"> 
+                My research interest is in exploring new approaches for turning design idea into reality.
+                This includes automating the design process with Geometry Processing 
+                and exploring new fabrication methods with Additive Manufacturing.
+
+            </p>
+            <p><br /></p>
+
+            <!-- project 1 -->
+            <div class="section">
+                <p><img src="../images/fluidic_circuit_cover.png" alt="" width="360" height="240" align="left" vspace="10" hspace="0" style=" padding: 0px 50px 0px 0px; border: #FFFFFF 2px none;" /></p>
+                <div class="content">
+                    <h2 id="fluidic_circuit_generator">Software Tool for Routing Efficiently Advanced Macrofluidics</h2>
+                    <ul>
+                        <li>
+                            Introduce a software based workflow that generates printable fluidic networks automatically.
+                        </li>
+                        <li>
+                            Provide a library of fluidic components to implement any logic circuit.
+                        </li>
+                        <li>[<a href="">View more</a>]
+                            [<a href="">Paper</a>] 
+                            [<a href="https://youtu.be/Q5BHOogOOLo">Video</a>]
+                        </li>
+                    </ul>
+                </div>
+                <!-- <p><br /> <br /></p> -->
+            </div>
+
+            <!-- project 2 -->
+            <div class="section">
+                <p><img src="../images/surface_slicer_cover.png" alt="" width="360" height="230" align="left" vspace="10" hspace="0" style=" padding: 0px 50px 0px 0px; border: #FFFFFF 2px none;" /></p>
+                <div class="content">
+                    <h2 id="fluidic_circuit_generator">Surface Slicer for Aersol Jet Additive Manufacturing</h2>
+                    <ul>
+                        <li>
+                            Introduce an approach to designing Intergrated Circuit that is conformal to provided geometry.
+                        </li>
+                        <li>
+                            Implement motion planning for robot arm to print the designed circuit.
+                        </li>
+                        <li>[<a href="">View more</a>]
+                            <!-- [<a href="/files/AM_Poster.pdf">Poster</a>]  -->
+                            [<a href="">Video</a>]
+                        </li>
+                    </ul>
+                    <p><br /> <br /></p>
+                </div>
+            </div>
+
+
+            <!-- project 3 -->
+            <div class="section">
+                <p><img src="../images/close_loop_printing_cover_draft.png" alt="" width="360" height="230" align="left" vspace="10" hspace="0" style=" padding: 0px 50px 0px 0px; border: #FFFFFF 2px none;" /></p>
+                <div class="content">
+                    <h2 id="fluidic_circuit_generator">Vision-based Close-loop FDM Printing for Fabricating Airtight Structures</h2>
+
+                    <ul>
+                        <li>
+                            Introduce an system to greatly improve print quality of FDM printer with computer vision.
+                        </li>
+                        <li>[<a href="">View more</a>]
+                            [<a href="">Poster</a>] 
+                            [<a href="https://youtu.be/6YeycaHmTKA">Video</a>]
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- project 4 -->
+            <div class="section">
+                <p><img src="../images/Wheel_up_cover.gif" alt="" width="360" height="200" align="left" vspace="10" hspace="0" style=" padding: 0px 50px 0px 0px; border: #FFFFFF 2px none;" /></p>
+                <div class="content">
+                    <h2 id="fluidic_circuit_generator">Wheel Up: A Wheelchair Training Simulator for Rehabilitation </h2>
+                    <ul>
+                        <li>
+                            Developed a wheelchair simulator game to provide training for wheelchair users.
+                        </li>
+                        <li>[<a href="https://ids.wpi.edu/wheel-up/">View more</a>]
+                            [<a href="https://users.wpi.edu/~mjchen/attachments/CoG_2023_WheelUp.pdf">Paper</a>] 
+                            [<a href="https://youtu.be/MTMOIv_5BZA?si=92_3c0tdg9MI4mnl">Video</a>]
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- project 5 -->
+            <div class="section">
+                <p><img src="../images/compliant_mechanism_cover.jpeg" alt="" width="360" height="230" align="left" vspace="10" hspace="0" style=" padding: 0px 50px 0px 0px; border: #FFFFFF 2px none;" /></p>
+                <div class="content">
+                    <h2 id="fluidic_circuit_generator"> Fully 3D Printed Fluidic Logic for Soft Robots Using FDM </h2>
+                    <ul>
+                        <li>
+                            Introduce a pneumatically powered compliant mechanism that are analogous to a CMOS transistor.
+                        </li>
+                        <li>
+                            Demonstrate using this device to control various soft robots.
+                        </li>
+                        <li>[<a href="">View more</a>]
+                            [<a href="">Paper</a>] 
+                            [<a href="">Video</a>]
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+{% include base_path %}
+
+
+{% for post in site.projects %}
+  {% include archive-single.html %}
+{% endfor %}
+
