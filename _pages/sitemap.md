@@ -7,6 +7,22 @@ author_profile: true
 
 {% include base_path %}
 
+
+
+[### About]({{ base_path }})
+<br/>
+<br/>
+[### Publicaitons]({{ base_path }}/publications/)
+<br/>
+<br/>
+[### Projects]({{ base_path }}/projects/)
+<br/>
+<br/>
+[### CV]({{ base_path }}/files/Lehong_Wang_CV_Sep_2023.pdf)
+
+
+
+<!-- 
 A list of all the posts and pages found on the site. For you robots out there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
 
 <h2>Pages</h2>
@@ -35,3 +51,6 @@ A list of all the posts and pages found on the site. For you robots out there is
   {% endunless %}
 {% endfor %}
 {% endfor %}
+
+
+ -->
