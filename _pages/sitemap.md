@@ -11,13 +11,13 @@ author_profile: true
 
 ### [About]({{ base_path }})
 <br/>
-<br/>
+
 ### [Publicaitons]({{ base_path }}/publications/)
 <br/>
-<br/>
+
 ### [Projects]({{ base_path }}/projects/)
 <br/>
-<br/>
+
 ### [CV]({{ base_path }}/files/Lehong_Wang_CV_Sep_2023.pdf)
 
 
