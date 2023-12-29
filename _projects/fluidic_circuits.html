@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>STREAM</title>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+
+
+    <style>
+        .content-row {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: row-reverse;
+        }
+    
+        .content-img {
+          flex-shrink: 0; /* Prevent image from shrinking */
+          margin-left: 10px; /* Adjust margin as needed */
+        }
+      </style>
+
+</head>
+
+<body>
+    <div id="main" style="padding-bottom:1em; padding-top: 5em; width: 60em; max-width: 70em; margin-left: auto; margin-right: auto;">
+        <section>
+            
+            <h1 style="text-align: center; margin-bottom: 0; color: #4e79a7; font-size: 300%"> STREAM </h1>
+            <h2 style="text-align: center; white-space: nowrap; font-size: 200%"> Software Tool for Routing Efficiently Advanced Macrofluidics </h2>
+
+<!--     
+            <span class="image" style="width: 100%; margin-top: 0.5em; margin-bottom: 0;">
+							<img src="images/teaser.svg" alt="" />
+						</span>
+
+            <p>
+                The current fabrication and assembly of fluidic circuits for soft robots relies heavily on manual processes; 
+                as the complexity of fluidic circuits increases, manual assembly becomes increasingly arduous, error-prone, and time-consuming. 
+                We introduce a software tool that generates printable fluidic networks automatically. 
+                We provide a library of fluidic logic elements that are easily 3D printed from thermoplastic polyurethanes using Fused Deposition Modeling only. 
+                Our software tool and component library allow the development of arbitrary soft digital circuits. 
+                We demonstrate a variable frequency ring oscillator and a full adder. 
+                The simplicity of our approach using FDM printers only, democratizes fluidic circuit implementation beyond spe- cialized laboratories. 
+                Our software is available on GitHub (https://github.com/roboticmaterialsgroup/FluidLogic)
+            </p>
+
+  -->
+
+
+
+            <div style="display: flex; align-items: flex-start; flex-direction: row-reverse;">
+                <img src="../images/fluidic_circuit_intro.png" style="width: 300px; flex-shrink: 0; margin-left: 30px; margin-bottom: 10px;">
+
+                    <p>
+                        The current fabrication and assembly of fluidic circuits for soft robots relies heavily on manual processes; 
+                        as the complexity of fluidic circuits increases, manual assembly becomes increasingly arduous, error-prone, and time-consuming. 
+                        We introduce a software tool that generates printable fluidic networks automatically. 
+                        We provide a library of fluidic logic elements that are easily 3D printed from thermoplastic polyurethanes using Fused Deposition Modeling only. 
+                        Our software tool and component library allow the development of arbitrary soft digital circuits. 
+                        We demonstrate a variable frequency ring oscillator and a full adder. 
+                        The simplicity of our approach using FDM printers only, democratizes fluidic circuit implementation beyond spe- cialized laboratories. 
+                        <!-- Our software is available on GitHub (https://github.com/roboticmaterialsgroup/FluidLogic) -->
+                    </p>
+            </div>
+
+
+
+
+            <!-- ########## Highlights ########## -->
+            <hr style="margin-top: 0em;">
+
+
+            <h3>Highlights</h3>
+
+
+            <div style="display: flex; align-items: flex-start; flex-direction: row-reverse;">
+                <img src="../images/fluidic_circuit_process.png" style="width: 300px; flex-shrink: 0; margin-left: 30px; margin-bottom: 10px;">
+                <p>
+                    Process of fabricating fluidic circuit with our software. 
+                    (A) logic diagram for the target circuit. 
+                    (B) schematic for our printed valve implementation of the logic diagram. 
+                    (C) rendered image of generated 3D models in our design software. The left half is shown without logic gates attached, the right half has logic gates attached. 
+                    (D) 3D printed valve component. 
+                    (E) 3D printed fluidic network. 
+                    (F) assembled fluidic circuit.
+                </p>
+            </div>
+
+
+
+            <!-- ########## Paper ########## -->
+            <hr style="margin-top: 0em;">
+
+
+            <h3>Paper</h3>
+
+            <p style="margin-bottom: 1em;">
+                Latest version: <a href="https://arxiv.org/abs/2312.01130">arXiv:2312.01130 [cs.RO]</a> or <a href="../files/STREAM_arxiv.pdf">here</a>.
+                <!-- <br> ICRA 2024 -->
+                <br>
+
+            </p>
+
+            <div class="12u$">
+                <a href="../files/STREAM_arxiv.pdf">
+                    <span class="image fit" style="border: 1px solid; border-color: #888888;">
+                        <img src="../images/paper_thumbnail.png" alt="" />
+                    </span>
+                </a>
+            </div>
+
+
+
+            <!-- ########## Code and Data ########## -->
+            <hr style="margin-top: 0em;">
+
+
+            <h3>Code and Data</h3>
+            <div class="box alt" style="margin-bottom: 1em;">
+                <div class="row 50% uniform" style="width: 100%;">
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 14.2%">
+                        <a href="https://github.com/Lehong-Wang/Fluid-Circuit-Generator">
+										<span class="image fit" style="margin-bottom: 0.5em;">
+											<img src="../images/github_logo.svg" alt=""/>
+										</span>
+										Source Code
+									</a>
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 14.2%">
+                        <a href="https://github.com/Lehong-Wang/Fluid-Circuit-Generator/tree/keep-everything/Assets">
+										<span class="image fit" style="margin-bottom: 0.5em;">
+											<img src="../images/folder.svg" alt="" style="overflow: hidden;" />
+										</span>
+										Design Demos 
+									</a>
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 14.2%">
+                        <a href="https://github.com/Lehong-Wang/Fluid-Circuit-Generator/tree/keep-everything/Assets">
+										<span class="image fit" style="margin-bottom: 0.5em;">
+											<img src="../images/folder.svg" alt="" style="overflow: hidden;" />
+										</span>
+										3D Models
+									</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <!-- ########## Demo 1 ########## -->
+            <hr style="margin-top: 0em;">
+
+
+            <h3>Ring Oscillator with Variable Frequency</h3>
+            <p>
+                This circuit could convert a constant supply pressure to a oscillation signal.
+                <br>Another input can control manipulate the output signal frequency.
+            </p>
+
+            <div class="box alt" style="margin-bottom: 1em;">
+                <div class="row 50% uniform" style="width: 100%;">
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        Design the Circuit
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/fluidic_circuit_ring_design.png" alt="" />
+                        </span>
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        Model the Circuit in Our Software
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/fluidic_circuit_ring_model.png" alt="" />
+                        </span>
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        Fabricate Circuit with 3D Printing
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/fluidic_circuit_ring_photo.png" alt="" />
+                        </span>
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        Output Pressure Measurements
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/fluidic_circuit_ring_plot.png" alt="" />
+						</span>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- ########## Demo 2 ########## -->
+            <hr style="margin-top: 0em;">
+
+
+            <h3>Full Adder</h3>
+            <p>
+                This circuit is a binary calculator that could add three binay numbers.
+                <br>It is a fundamental digital circuit that performs arithmetic addition.
+                <br>It takes in three inputs and has two outputs. 
+                <br>High pressure represents a "1" and atomic pressure represents a "0".
+
+            <div class="box alt" style="margin-bottom: 1em;">
+                <div class="row 50% uniform" style="width: 100%;">
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        Design the Circuit
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/fluidic_circuit_adder_design.png" alt="" />
+                        </span>
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        Model the Circuit in Our Software
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/fluidic_circuit_adder_model.png" alt="" />
+                        </span>
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        Fabricate Circuit with 3D Printing
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/fluidic_circuit_adder_photo.png" alt="" />
+                        </span>
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        Output Pressure Measurements
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/fluidic_circuit_adder_plot.png" alt="" />
+						</span>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- ########## Demo 3 ########## -->
+            <hr style="margin-top: 0em;">
+
+
+            <h3>Phumatic Stewart Platform</h3>
+            <p>
+                This circuit enables a single input to controls the orientation of a phumatic Stewart platform.
+                <br>It is a four-state state machine consisting of input, output mapping and two-bit memory to store the states.
+                <br>The concept of state machine is essential in robotics and enables the design of behaviors and their transition conditions.
+                <br>This circuit is a proof of concept that this software could be essential in designing phumatic robots with complex behaviors.
+                <br>(This circuit is partically tested but not fully implemented.)
+
+            <div class="box alt" style="margin-bottom: 1em;">
+                <div class="row 50% uniform" style="width: 100%;">
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        Design the Circuit
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/fluidic_circuit_platform_design.png" alt="" />
+                        </span>
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        Model the Circuit in Our Software
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/fluidic_circuit_platform_model.png" alt="" />
+                        </span>
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        Fabricate Circuit with 3D Printing
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/fluidic_circuit_platform_photo.png" alt="" />
+                        </span>
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        Phumatic Stewart Platform
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/fluidic_circuit_platform_photo_2.jpg" alt="" />
+						</span>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- ########## Video ########## -->
+            <hr style="margin-top: 0em;">
+
+
+            <h3>Video for Our Paper</h3>
+
+            <video controls muted style="width: 97.6%; margin-left: 0%;" preload="metadata"><source src="../images/fluidic_circuit_video.mp4" type="video/mp4"> </video>
+
+            
+
+
+            <!-- ########## Acknowledgements and Contact ########## -->
+
+
+            <hr style="margin-top: 0em;">
+
+            <h3>Acknowledgements</h3>
+            <p>
+                This work is supported by Robotics Materials Group at Worcester Polytechnic Instituite.
+            </p>
+
+            <hr style="margin-top: 1em">
+            <h3>Contact</h3>
+            <p>If you have any questions, please feel free to contact <a href="http://lehong-wang.github.io/">Lehong Wang</a></p>
+            <hr/>
+
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
