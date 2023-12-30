@@ -118,6 +118,7 @@ author:
 
 
 # Reading Files
+# Add directories that want to be available on website
 include:
   - .htaccess
   - _pages
