@@ -18,7 +18,7 @@ author_profile: true
 ### [Projects]({{ base_path }}/projects/)
 <br/>
 
-### [CV]({{ base_path }}/files/Lehong_Wang_CV_Sep_2023.pdf)
+### [CV]({{ base_path }}/files/Lehong_Wang_CV.pdf)
 
 
 

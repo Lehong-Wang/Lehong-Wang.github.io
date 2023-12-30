@@ -20,7 +20,7 @@ My recent works have been on employing computer vision and computer graphics tec
   /
   <a href="https://lehong-wang.github.io//publications/">Publications</a>
   /
-  <a href="https://lehong-wang.github.io//files/Lehong_Wang_CV_Sep_2023.pdf">CV</a>
+  <a href="https://lehong-wang.github.io//files/Lehong_Wang_CV.pdf">CV</a>
 </p>
 
 
