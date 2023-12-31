@@ -14,118 +14,65 @@
             <h2 style="text-align: center; white-space: nowrap; font-size: 200%"> Software Tool for Planning Circuit for Aersol Jet Additive Manufacturing </h2>
 
 
-            <span style="width: 100%">
-                <img src="../images/surface_slicer_intro.png" alt="" />
-            </span>
-
+            <div style="text-align: center;">
+                <img src="../images/surface_slicer_intro.png" alt="Image Description" style="width: 100%;">
+            </div>
 
             <p>
-                The current fabrication and assembly of fluidic circuits for soft robots relies heavily on manual processes; 
-                as the complexity of fluidic circuits increases, manual assembly becomes increasingly arduous, error-prone, and time-consuming. 
-                We introduce a software tool that generates printable fluidic networks automatically. 
-                We provide a library of fluidic logic elements that are easily 3D printed from thermoplastic polyurethanes using Fused Deposition Modeling only. 
-                Our software tool and component library allow the development of arbitrary soft digital circuits. 
-                We demonstrate a variable frequency ring oscillator and a full adder. 
-                The simplicity of our approach using FDM printers only, democratizes fluidic circuit implementation beyond spe- cialized laboratories. 
-                <!-- Our software is available on GitHub (https://github.com/roboticmaterialsgroup/FluidLogic) -->
-            </p>
-    
-            <!-- <div style="display: flex; align-items: flex-start; flex-direction: row-reverse;">
-                <img src="../images/fluidic_circuit_intro.png" style="width: 300px; flex-shrink: 0; margin-left: 30px; margin-bottom: 10px;">
-
-                    <p>
-                        The current fabrication and assembly of fluidic circuits for soft robots relies heavily on manual processes; 
-                        as the complexity of fluidic circuits increases, manual assembly becomes increasingly arduous, error-prone, and time-consuming. 
-                        We introduce a software tool that generates printable fluidic networks automatically. 
-                        We provide a library of fluidic logic elements that are easily 3D printed from thermoplastic polyurethanes using Fused Deposition Modeling only. 
-                        Our software tool and component library allow the development of arbitrary soft digital circuits. 
-                        We demonstrate a variable frequency ring oscillator and a full adder. 
-                        The simplicity of our approach using FDM printers only, democratizes fluidic circuit implementation beyond spe- cialized laboratories. 
-                    </p>
-            </div> -->
-
-
-
-
-            <!-- ########## Highlights ########## -->
-            <hr style="margin-top: 0em;">
-
-
-            <h3>Highlights</h3>
-
-
-            <div style="display: flex; align-items: flex-start; flex-direction: row-reverse;">
-                <img src="../images/fluidic_circuit_process.png" style="width: 300px; flex-shrink: 0; margin-left: 30px; margin-bottom: 10px;">
-                <p>
-                    Process of fabricating fluidic circuit with our software. 
-                    (A) logic diagram for the target circuit. 
-                    (B) schematic for our printed valve implementation of the logic diagram. 
-                    (C) rendered image of generated 3D models in our design software. The left half is shown without logic gates attached, the right half has logic gates attached. 
-                    (D) 3D printed valve component. 
-                    (E) 3D printed fluidic network. 
-                    (F) assembled fluidic circuit.
-                </p>
-            </div>
-
-
-
-            <!-- ########## Paper ########## -->
-            <hr style="margin-top: 0em;">
-
-
-            <h3>Paper</h3>
-
-            <p style="margin-bottom: 1em;">
-                Latest version: <a href="https://arxiv.org/abs/2312.01130">arXiv:2312.01130 [cs.RO]</a> or <a href="../files/STREAM_arxiv.pdf">here</a>.
-                <!-- <br> ICRA 2024 -->
-                <br>
-
+                The Aerosol Jet Additive Manufacturing technology allows for precise deposition of different materials in a three-dimensional space. 
+                An application of this technology is the printing of integrated circuits onto the surface of three-dimensional objects.
+                However, the existing methods for creating 3D circuits generally require the manual design of circuit traces using computer-aided design (CAD) software. 
+                This process is laborious and impedes the quick development of prototypes. 
+                The objective of this project is to develop software capable of efficiently converting pre-existing 2D PCB designs onto a corresponding 3D object. 
+                The software is capable of determining the transformation between a 2D PCB design and a desired 3D surface, and generating waypoints or motions for printing. 
+                We showcase the software's robustness and adaptability through a range of circuit design demos.
+                <br>* Since this work is still under active development, source code is not publicly available.
             </p>
 
-            <div class="12u$">
-                <a href="../files/STREAM_arxiv.pdf">
-                    <span class="image fit" style="border: 1px solid; border-color: #888888;">
-                        <img src="../images/paper_thumbnail.png" alt="" />
-                    </span>
-                </a>
-            </div>
 
 
 
-            <!-- ########## Code and Data ########## -->
+            <!-- ########## Method ########## -->
             <hr style="margin-top: 0em;">
 
 
-            <h3>Code and Data</h3>
+            <h3>Method</h3>
+
             <div class="box alt" style="margin-bottom: 1em;">
                 <div class="row 50% uniform" style="width: 100%;">
-                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 14.2%">
-                        <a href="https://github.com/Lehong-Wang/Fluid-Circuit-Generator">
-										<span class="image fit" style="margin-bottom: 0.5em;">
-											<img src="../images/github_logo.svg" alt=""/>
-										</span>
-										Source Code
-									</a>
-                    </div>
-                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 14.2%">
-                        <a href="https://github.com/Lehong-Wang/Fluid-Circuit-Generator/tree/keep-everything/Example">
-										<span class="image fit" style="margin-bottom: 0.5em;">
-											<img src="../images/folder.svg" alt="" style="overflow: hidden;" />
-										</span>
-										Design Demos 
-									</a>
-                    </div>
-                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 14.2%">
-                        <a href="https://github.com/Lehong-Wang/Fluid-Circuit-Generator/tree/keep-everything/Assets">
-										<span class="image fit" style="margin-bottom: 0.5em;">
-											<img src="../images/folder.svg" alt="" style="overflow: hidden;" />
-										</span>
-										3D Models
-									</a>
-                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/surface_slicer_method_circuit.png" alt="" />
+                        </span>
+                        A. The input PCB design (in gerber format) is parsed into 2D printing trajectory as waypoints.
 
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/surface_slicer_method_mapping.png" alt="" />
+                        </span>
+                        B. The input 3D surface (in stl format) analyzed and a transformation to 2D is calculated.
+
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/surface_slicer_method_2to3.gif" alt="" />
+                        </span>
+                        C. The 2D circuit waypoints is layed onto the 2D surface, and the inverse transformation is applied to bring the circuit waypoints to 3D. 
+
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/surface_slicer_method_motion.png" alt="" />
+						</span>
+                        D. The 3D waypoints is analyzed and printing motion for the Aersol Jet machine is calculated.
+
+                    </div>
                 </div>
             </div>
+
+
+
 
 
 
@@ -134,87 +81,71 @@
             <hr style="margin-top: 0em;">
 
 
-            <h3>Ring Oscillator with Variable Frequency</h3>
-            <p>
-                This circuit could convert a constant supply pressure to a oscillation signal.
-                <br>Another input can control manipulate the output signal frequency.
-            </p>
+            <h3>Sensor Circuit on Hand</h3>
 
-            <div class="box alt" style="margin-bottom: 1em;">
-                <div class="row 50% uniform" style="width: 100%;">
-                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-                        Design the Circuit
-                        <span class="image fit" style="margin-bottom: 0.5em;">
-                            <img src="../images/fluidic_circuit_ring_design.png" alt="" />
-                        </span>
-                    </div>
-                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-                        Model the Circuit in Our Software
-                        <span class="image fit" style="margin-bottom: 0.5em;">
-                            <img src="../images/fluidic_circuit_ring_model.png" alt="" />
-                        </span>
-                    </div>
-                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-                        Fabricate Circuit with 3D Printing
-                        <span class="image fit" style="margin-bottom: 0.5em;">
-                            <img src="../images/fluidic_circuit_ring_photo.png" alt="" />
-                        </span>
-                    </div>
-                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-                        Output Pressure Measurements
-                        <span class="image fit" style="margin-bottom: 0.5em;">
-                            <img src="../images/fluidic_circuit_ring_plot.png" alt="" />
-						</span>
+            <div style="display: flex;">
 
-                    </div>
+                <div style="flex: 2.5; padding: 10px; text-align: center;">
+                    <span class="image fit" style="margin-bottom: 0.5em;">
+                        Hand Model
+                        <img src="../images/surface_slicer_hand_model.png" alt="">
+                    </span>
+                    <span class="image fit" style="margin-bottom: 0.5em;">
+                        Sensor Circuit
+                        <img src="../images/surface_slicer_hand_circuit.png" alt="">
+                    </span>
                 </div>
+            
+                <div style="flex: 7.5; padding: 10px; text-align: center;">
+                    Animation of Circuit Printing on Hand
+                    <span class="image fit" style="margin-bottom: 0.5em;">
+                        <video controls autoplay loop muted playsinline style="width: 100%;">
+                            <source src="../images/surface_slicer_hand_video.mov" type="video/mp4">
+                        </video>
+                    </span>
+                </div>
+            
             </div>
-
-
-
 
 
             <!-- ########## Demo 2 ########## -->
             <hr style="margin-top: 0em;">
 
 
-            <h3>Full Adder</h3>
-            <p>
-                This circuit is a binary calculator that could add three binay numbers.
-                <br>It is a fundamental digital circuit that performs arithmetic addition.
-                <br>It takes in three inputs and has two outputs. 
-                <br>High pressure represents a "1" and atomic pressure represents a "0".
+            <h3>Blinker Circuit on Mechnical Part</h3>
 
-            <div class="box alt" style="margin-bottom: 1em;">
-                <div class="row 50% uniform" style="width: 100%;">
-                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-                        Design the Circuit
-                        <span class="image fit" style="margin-bottom: 0.5em;">
-                            <img src="../images/fluidic_circuit_adder_design.png" alt="" />
-                        </span>
-                    </div>
-                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-                        Model the Circuit in Our Software
-                        <span class="image fit" style="margin-bottom: 0.5em;">
-                            <img src="../images/fluidic_circuit_adder_model.png" alt="" />
-                        </span>
-                    </div>
-                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-                        Fabricate Circuit with 3D Printing
-                        <span class="image fit" style="margin-bottom: 0.5em;">
-                            <img src="../images/fluidic_circuit_adder_photo.png" alt="" />
-                        </span>
-                    </div>
-                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-                        Output Pressure Measurements
-                        <span class="image fit" style="margin-bottom: 0.5em;">
-                            <img src="../images/fluidic_circuit_adder_plot.png" alt="" />
-						</span>
+            <div style="display: flex;">
 
-                    </div>
+                <div style="flex: 2.5; padding: 10px; text-align: center;">
+                    <span class="image fit" style="margin-bottom: 0.5em;">
+                        Part Model
+                        <img src="../images/surface_slicer_part_model.png" alt="">
+                    </span>
+                    <span class="image fit" style="margin-bottom: 0.5em;">
+                        Blinker Circuit
+                        <img src="../images/surface_slicer_part_circuit.png" alt="">
+                    </span>
                 </div>
-            </div>
+            
+                <div style="flex: 5; padding: 10px; text-align: center;">
+                    Animation of Circuit Printing on Part
+                    <span class="image fit" style="margin-bottom: 0.5em;">
+                        <video controls autoplay loop muted playsinline style="width: 100%;">
+                            <source src="../images/surface_slicer_part_video.mp4" type="video/mp4"> 
+                        </video>
+                    </span>
+                </div>
 
+                <div style="flex: 2.5; padding: 10px; text-align: center;">
+                    Animation of Printing
+                    <span class="image fit" style="margin-bottom: 0.5em;">
+                        <video controls autoplay loop muted playsinline style="width: 100%;">
+                            <source src="../images/surface_slicer_part_motion.mov" type="video/mp4"> 
+                        </video>
+                    </span>
+                </div>
+            
+            </div>
 
 
 
@@ -222,42 +153,30 @@
             <hr style="margin-top: 0em;">
 
 
-            <h3>Phumatic Stewart Platform</h3>
-            <p>
-                This circuit enables a single input to controls the orientation of a phumatic Stewart platform.
-                <br>It is a four-state state machine consisting of input, output mapping and two-bit memory to store the states.
-                <br>The concept of state machine is essential in robotics and enables the design of behaviors and their transition conditions.
-                <br>This circuit is a proof of concept that this software could be essential in designing phumatic robots with complex behaviors.
-                <br>(This circuit is partically tested but not fully implemented.)
+            <h3>Printing the Continents on a Globe</h3>
 
-            <div class="box alt" style="margin-bottom: 1em;">
-                <div class="row 50% uniform" style="width: 100%;">
-                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-                        Design the Circuit
-                        <span class="image fit" style="margin-bottom: 0.5em;">
-                            <img src="../images/fluidic_circuit_platform_design.png" alt="" />
-                        </span>
-                    </div>
-                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-                        Model the Circuit in Our Software
-                        <span class="image fit" style="margin-bottom: 0.5em;">
-                            <img src="../images/fluidic_circuit_platform_model.png" alt="" />
-                        </span>
-                    </div>
-                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-                        Fabricate Circuit with 3D Printing
-                        <span class="image fit" style="margin-bottom: 0.5em;">
-                            <img src="../images/fluidic_circuit_platform_photo.png" alt="" />
-                        </span>
-                    </div>
-                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
-                        Phumatic Stewart Platform
-                        <span class="image fit" style="margin-bottom: 0.5em;">
-                            <img src="../images/fluidic_circuit_platform_photo_2.jpg" alt="" />
-						</span>
+            <div style="display: flex;">
 
-                    </div>
+                <div style="flex: 3; padding: 10px; text-align: center;">
+                    <span class="image fit" style="margin-bottom: 0.5em;">
+                        Continents Outline
+                        <img src="../images/surface_slicer_globe_pattern.png" alt="">
+                    </span>
+                    <span class="image fit" style="margin-bottom: 0.5em;">
+                        Mapped to a Globe
+                        <img src="../images/surface_slicer_globe_mapped.png" alt="">
+                    </span>
                 </div>
+            
+                <div style="flex: 7; padding: 10px; text-align: center;">
+                    Animation of Printing on Globe
+                    <span class="image fit" style="margin-bottom: 0.5em;">
+                        <video controls autoplay loop muted playsinline style="width: 100%;">
+                            <source src="../images/surface_slicer_globe_video.mp4" type="video/mp4">
+                        </video>
+                    </span>
+                </div>
+            
             </div>
 
 
@@ -267,11 +186,15 @@
             <hr style="margin-top: 0em;">
 
 
-            <h3>Video for the Paper</h3>
+            <h3>Project Presentation</h3>
 
-            <video controls muted style="width: 97.6%; margin-left: 0%;" preload="metadata"><source src="../images/fluidic_circuit_video.mp4" type="video/mp4"> </video>
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/SkzZEGj5ZAs?si=QLmIW2hWO3l9w9s7" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
 
-            
+
 
 
             <!-- ########## Acknowledgements and Contact ########## -->
@@ -281,8 +204,32 @@
 
             <h3>Acknowledgements</h3>
             <p>
-                This work is supported by Robotics Materials Group at Worcester Polytechnic Instituite.
+                This work is supported by Biorobotics Lab at Carnegie Mellon University.
             </p>
+
+
+<!-- 
+            <div class="box alt" style="margin-bottom: 1em;">
+                <div class="row 0% uniform" style="width: 100%; display: flex; justify-content: space-between;">
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 20%">
+                        <span class="image fit" style="margin-bottom: 0.5em; margin-top: 0.3em">
+										<img src="../images/github_logo.svg" alt=""/>
+									</span>
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 20%">
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+										<img src="../images/github_logo.svg" alt=""/>
+									</span>
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 20%">
+                        <span class="image fit" style="margin-bottom: 0.5em; margin-top: 0.3em">
+										<img src="../images/github_logo.svg" alt=""/>
+									</span>
+                    </div>
+                </div>
+            </div> -->
+
+
 
             <hr style="margin-top: 1em">
             <h3>Contact</h3>
