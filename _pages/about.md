@@ -15,6 +15,21 @@ I have also worked as a research intern in the [Biorobotics Lab](http://biorobot
 My research focuses on the application of additive manufacturing technology to the fabrication of made-to-order robots. 
 My recent works have been on employing computer vision and computer graphics technechnics to improve the manufacturing process.
 
+<br/>
+
+# News
+
+- Our paper: *Vision-based FDM Printing for Fabricating Airtight Soft Actuators* has been accepted by **IEEE RoboSoft 2024** as an **Oral Presentation**!
+
+- Our paper: *FDM Printing: A Fabrication Method for Fluidic Soft Circuits?* has been accepted by **IEEE RoboSoft 2024**!
+
+<br/>
+
+# Service
+Reviewer of **IEEE International Conference on Soft Robotics (RoboSoft)**
+
+<br/>
+
 <p style="text-align: center;"> 
   <a href="https://lehong-wang.github.io/">Home</a>
   /
@@ -23,12 +38,7 @@ My recent works have been on employing computer vision and computer graphics tec
   <a href="https://lehong-wang.github.io//files/Lehong_Wang_CV.pdf">CV</a>
 </p>
 
-# News
-
-- Our paper: *Vision-based FDM Printing for Fabricating Airtight Soft Actuators* has been accepted by **IEEE RoboSoft 2024** as an **Oral Presentation**!
-
-- Our paper: *FDM Printing: A Fabrication Method for Fluidic Soft Circuits?* has been accepted by **IEEE RoboSoft 2024**!
-
+<br/>
 
 
 <iframe 
