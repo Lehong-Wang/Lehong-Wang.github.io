@@ -23,6 +23,12 @@ My recent works have been on employing computer vision and computer graphics tec
   <a href="https://lehong-wang.github.io//files/Lehong_Wang_CV.pdf">CV</a>
 </p>
 
+# News
+
+- Our paper: *Vision-based FDM Printing for Fabricating Airtight Soft Actuators* has been accepted by **IEEE RoboSoft 2024** as an **Oral Presentation**!
+
+- Our paper: *FDM Printing: A Fabrication Method for Fluidic Soft Circuits?* has been accepted by **IEEE RoboSoft 2024**!
+
 
 
 <iframe 

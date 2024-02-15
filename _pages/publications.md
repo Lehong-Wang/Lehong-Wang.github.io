@@ -20,7 +20,7 @@ author_profile: true
 **Lehong Wang**, Savita V. Kendre, Haotian Liu and Markus P. Nemitz. [STREAM: Software Tool for Routing Efficiently Advanced Macrofluidics.](https://arxiv.org/abs/2312.01130) ICRA (Under review)
 
 
-Zilin Dai, Yijia Wu, Haotian Liu, **Lehong Wang** and Markus P. Nemitz. [Vision-based FDM Printing for Fabricating Airtight Soft Actuators.](https://arxiv.org/abs/2312.01135) RoboSoft (Accepted)
+Zilin Dai, Yijia Wu, Haotian Liu, **Lehong Wang** and Markus P. Nemitz. [Vision-based FDM Printing for Fabricating Airtight Soft Actuators.](https://arxiv.org/abs/2312.01135) RoboSoft (Oral Presentation)
 
 
 **Lehong Wang\***, Savita V. Kendre*, Ethan Wilke, Nicholas Pacheco, Loris Fichera and Markus P. Nemitz. [FDM Printing: A Fabrication Method for Fluidic Soft Circuits?](https://arxiv.org/abs/2312.01131) RoboSoft (Accepted)
