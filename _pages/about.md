@@ -19,9 +19,12 @@ My recent works have been on employing computer vision and computer graphics tec
 
 # News
 
-- Our paper: *Vision-based FDM Printing for Fabricating Airtight Soft Actuators* has been accepted by **IEEE RoboSoft 2024** as an **Oral Presentation**!
+- 04/17/2024: Our paper: *FDM Printing: A Fabrication Method for Fluidic Soft Circuits?* won the **Best Paper Award** in Excellence in Manufacturing Reproducibility track at **IEEE RoboSoft 2024**! [\[Post\]](https://www.linkedin.com/feed/update/urn:li:activity:7186250205229391873/)
 
-- Our paper: *FDM Printing: A Fabrication Method for Fluidic Soft Circuits?* has been accepted by **IEEE RoboSoft 2024**!
+- 03/21/2024: Our paper: *From Flat to Form-Fitting: A Computational Geometry Approach to 3D Wearable Electronic Design and Rapid Prototyping* has been accepted by **IEEE ICRA 2024** as workshop contribution!
+
+- 01/18/2024: Our paper: *Vision-based FDM Printing for Fabricating Airtight Soft Actuators* has been accepted by **IEEE RoboSoft 2024** as an **Oral Presentation**!
+
 
 <br/>
 
@@ -40,12 +43,12 @@ Reviewer of **IEEE International Conference on Soft Robotics (RoboSoft)**
 
 <br/>
 
-
+<!-- 
 <iframe 
   width="560" height="315" 
   src="https://www.youtube.com/embed/Q5BHOogOOLo?autoplay=1&mute=1" 
   title="YouTube video player" 
   frameborder="0" 
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
-</iframe>
+</iframe> -->
 
