@@ -8,12 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a senior double majoring in Robotic Engineering and Computer Engineering at [Worcester Polytechnic Institute](https://www.wpi.edu/) (WPI).
-I am a research assistant at [Robotic Materials Group](https://wp.wpi.edu/roboticmaterialsgroup/) at WPI under the supervision of [Prof. Markus Nemitz](https://www.wpi.edu/people/faculty/mnemitz).
-I have also worked as a research intern in the [Biorobotics Lab](http://biorobotics.ri.cmu.edu/index.php) at [Carnegie Mellon University](https://www.cmu.edu/), advised by [Prof. Howie Choset](https://www.ri.cmu.edu/ri-faculty/howie-choset/).
+I am currently a Master's student majoring in Machenical Engineering at [Carneigie Mellon University](https://www.cmu.edu/) (CMU). I obtained my undergrad degree with double major in Robotics Engineering and Computer Science at [Worcester Polytechnic Institute](https://www.wpi.edu/) (WPI).
+I have worked under [Prof. Markus Nemitz](https://www.wpi.edu/people/faculty/mnemitz) at WPI, and currently working as a research assistant in the [Biorobotics Lab](http://biorobotics.ri.cmu.edu/index.php) at CMU, advised by [Prof. Howie Choset](https://www.ri.cmu.edu/ri-faculty/howie-choset/).
 
-My research focuses on the application of additive manufacturing technology to the fabrication of made-to-order robots. 
-My recent works have been on employing computer vision and computer graphics technechnics to improve the manufacturing process.
+My research focuses on robotic motion planning and perception, with applications in smart manufacturing. I work on systems that are aware of the target being manufactured and capable of actively adjusting pre-computed plans to optimize outcomes. I also specialize in processing and understanding real-world 3D data, bridging the gap between computational models and physical environments.
 
 <br/>
 
