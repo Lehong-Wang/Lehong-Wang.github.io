@@ -36,7 +36,7 @@ Reviewer of **IEEE International Conference on Soft Robotics (RoboSoft)**
   /
   <a href="https://lehong-wang.github.io//publications/">Publications</a>
   /
-  <a href="https://lehong-wang.github.io//files/Lehong_Wang_CV.pdf">CV</a>
+  <a href="https://lehong-wang.github.io//files/Lehong_Wang_Resume.pdf">CV</a>
 </p>
 
 <br/>

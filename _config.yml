@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Lehong Wang"
 title_separator          : "-"
 name                     : &name "Lehong Wang"
-description              : &description "Undergrad at WPI (Worcester Polytechnic Instituite)"
+description              : &description "Master student at CMU (Carnegie Mellon University)"
 url                      : https://lehong-wang.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "lehong-wang.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Lehong Wang"
   avatar           : "profile.png"
-  bio              : "Undergrad at WPI (Worcester Polytechnic Instituite)"
-  location         : "Massachusetts, US"
+  bio              : "Master student at CMU (Carnegie Mellon University)"
+  location         : "Pittsburgh, US"
   employer         :
   pubmed           :
   googlescholar    : 
-  email            : "lwang11@wpi.edu"
+  email            : "lehongw@andrew.cmu.edu"
   researchgate     :  
   uri              :
   bitbucket        :
