@@ -41,6 +41,8 @@ Reviewer of **IEEE International Conference on Soft Robotics (RoboSoft)**
 
 <br/>
 
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=ULlV7eHD-Q94vWzcyeIHSQ-xaeuvnOrdkcPxLKgb3xw&cl=ffffff&w=a"></script>
+
 <!-- 
 <iframe 
   width="560" height="315" 
