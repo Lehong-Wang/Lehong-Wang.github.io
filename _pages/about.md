@@ -29,19 +29,23 @@ My research focuses on robotic motion planning and perception, with applications
 # Service
 Reviewer of **IEEE International Conference on Soft Robotics (RoboSoft)**
 
-<br/>
 
-<p style="text-align: center;"> 
-  <a href="https://lehong-wang.github.io/">Home</a>
-  /
-  <a href="https://lehong-wang.github.io//publications/">Publications</a>
-  /
-  <a href="https://lehong-wang.github.io//files/Lehong_Wang_Resume.pdf">CV</a>
-</p>
 
-<br/>
+<footer style="text-align: center; font-size: 0.9em; margin-top: 40px;">
+  <br/>
+  <p>
+    <a href="https://lehong-wang.github.io/">Home</a> /
+    <a href="https://lehong-wang.github.io/publications/">Publications</a> /
+    <a href="https://lehong-wang.github.io/files/Lehong_Wang_Resume.pdf">CV</a>
+  </p>
+  <br/>
 
-<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=ULlV7eHD-Q94vWzcyeIHSQ-xaeuvnOrdkcPxLKgb3xw&cl=ffffff&w=a"></script>
+  <div style="display: inline-block; transform: scale(0.4); transform-origin: center;">
+    <script type="text/javascript" id="clustrmaps" 
+            src="//clustrmaps.com/map_v2.js?d=ULlV7eHD-Q94vWzcyeIHSQ-xaeuvnOrdkcPxLKgb3xw&cl=ffffff&w=a">
+    </script>
+  </div>
+</footer>
 
 <!-- 
 <iframe 
