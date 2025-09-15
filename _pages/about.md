@@ -17,6 +17,13 @@ My research focuses on robotic motion planning and perception, with applications
 
 # News
 
+- 09/10/2025: Our paper: *Auto-Routing Fluidic Printed Circuit Boards* is published at **Advanced Robotics Research** Journal! [\[Paper\]](https://advanced.onlinelibrary.wiley.com/doi/10.1002/adrr.202500065)
+
+- 08/20/2025: Our paper: *From Flat to Form-Fitting: A Computational Geometry Approach to 3D Conformal Electronics Design and Rapid Prototyping* is published at **IEEE CASE 2025**! [\[Video Abstract\]](https://youtu.be/aUtIGDBdTAk)
+
+- 11/15/2024: Our paper: *FDM-Printed CMOS Logic Gates from Flexing Beam
+Mechanisms for the Control of Soft Robotic Systems* is published at **Advanced Intelligent Systems** Journal! [\[Paper\]](https://advanced.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/aisy.202400468)
+
 - 04/17/2024: Our paper: *FDM Printing: A Fabrication Method for Fluidic Soft Circuits?* won the **Best Paper Award** in Excellence in Manufacturing Reproducibility track at **IEEE RoboSoft 2024**! [\[Post\]](https://www.linkedin.com/feed/update/urn:li:activity:7186250205229391873/)
 
 - 03/21/2024: Our paper: *From Flat to Form-Fitting: A Computational Geometry Approach to 3D Wearable Electronic Design and Rapid Prototyping* has been accepted by **IEEE ICRA 2024** as workshop contribution!
