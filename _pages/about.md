@@ -47,11 +47,18 @@ Reviewer of **IEEE International Conference on Soft Robotics (RoboSoft)**
   </p>
   <br/>
 
-  <div style="display: inline-block; transform: scale(0.4); transform-origin: center;">
+  <!-- <div style="display: inline-block; transform: scale(0.4); transform-origin: center;">
     <script type="text/javascript" id="clustrmaps" 
             src="//clustrmaps.com/map_v2.js?d=ULlV7eHD-Q94vWzcyeIHSQ-xaeuvnOrdkcPxLKgb3xw&cl=ffffff&w=a">
     </script>
+  </div> -->
+
+  <div style="display: inline-block; width: 150px;">
+    <script type="text/javascript" id="clustrmaps"
+            src="//clustrmaps.com/map_v2.js?d=ULlV7eHD-Q94vWzcyeIHSQ-xaeuvnOrdkcPxLKgb3xw&cl=ffffff&w=240">
+    </script>
   </div>
+
 </footer>
 
 <!-- 
