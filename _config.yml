@@ -13,7 +13,7 @@ name                     : &name "Lehong Wang"
 description              : &description "Master student at CMU (Carnegie Mellon University)"
 url                      : https://lehong-wang.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "lehong-wang.github.io"
+repository               : "Lehong-Wang/lehong-wang.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160

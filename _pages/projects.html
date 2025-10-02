@@ -5,258 +5,239 @@ permalink: /projects/
 author_profile: true
 ---
 
-
 <!doctype html>
 <html lang="en" class="no-js">
 
-
-
 <style>
+/* Research project layout */
+.section {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 50px;
+}
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-    }
+/* Fixed-size image box for uniform thumbnails */
+.section .image-container {
+  width: 350px;
+  height: auto;
+  overflow: hidden;
+  flex-shrink: 0; /* don’t let the image column collapse */
+}
 
-    .grid-item {
-        text-align: center;
-    }
+.section .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* fill & crop for perfect uniform tiles */
+  border: none;
+}
 
+/* Heading styling + remove top gap */
+.section h2 {
+  margin-top: 0;
+  padding-top: 0;
+  padding: 10px;
+}
+.section h2 span {
+  padding: 5px 10px;
+}
+
+/* Class projects grid (unchanged) */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.grid-item {
+  text-align: center;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 720px) {
+  .section {
+    flex-direction: column;
+  }
+  .section .image-container {
+    width: 100%;
+    height: 220px; /* shorter banner on mobile */
+  }
+}
 </style>
 
-
 <p align="justify"> 
-    My research interest is in exploring new approaches for turning design idea into reality.
-    This includes automating the design process with Geometry Processing 
-    and exploring new fabrication methods with Additive Manufacturing.
+  My research interest is in exploring new approaches for turning design idea into reality.
+  This includes automating the design process with Geometry Processing 
+  and exploring new fabrication methods with Additive Manufacturing.
 </p>
 
 <p><br /></p>
 
-
-<!-- project 1 -->
+<!-- Project 1 -->
 <div class="section">
-    <p><img src="../images/IDS.png" alt="" width="360" align="left" vspace="10" hspace="0" style=" padding: 0px 50px 0px 0px; border: #FFFFFF 2px none;" /></p>
-    <div class="content">
-        <h2>Conformal Aersol Jet Additive Manufacturing</h2>
-        <ul>
-            <li>
-                Introduce an approach to designing intergrated circuit that is conformal to provided geometry.
-            </li>
-            <li>
-                Built multi-axis conformal printing with robot arm to fabricate functional circuits.
-            </li>
-            <li>
-                This research is published at CASE 2025.
-            </li>
-            <li>
-                [<a href="../_projects/surface_slicer.html">View more</a>]
-                [<a href="https://youtu.be/3mFyxT9Hu4E">Video</a>]
-                [<a href="https://youtu.be/aUtIGDBdTAk">Video Abstract</a>]
-            </li>
-        </ul>
-    </div>
-    <p><br /> <br /></p>
+  <div class="image-container">
+    <img src="../images/IDS.png" alt="Conformal Aerosol Jet Additive Manufacturing">
+  </div>
+  <div class="content">
+    <h2><span>Conformal Aerosol Jet Additive Manufacturing</span></h2>
+    <ul>
+      <li>Introduce an approach to designing integrated circuit that is conformal to provided geometry.</li>
+      <li>Built multi-axis conformal printing with robot arm to fabricate functional circuits.</li>
+      <li>This research is published at CASE 2025.</li>
+      <li>[<a href="../_projects/surface_slicer.html">View more</a>]
+          [<a href="https://youtu.be/3mFyxT9Hu4E">Video</a>]
+          [<a href="https://youtu.be/aUtIGDBdTAk">Video Abstract</a>]
+      </li>
+    </ul>
+  </div>
 </div>
 
-
-<!-- project 2 -->
+<!-- Project 2 -->
 <div class="section">
-    <p><img src="../images/siemens_cover.png" alt="" width="300" align="left" vspace="10" hspace="30" style=" padding: 0px 50px 0px 0px; border: #FFFFFF 2px none;" /></p>
-    <div class="content">
-        <h2>Siemens Electroic Assembly Process Tracking Project</h2>
-        <ul>
-            <li>
-                Developed integrated system for Siemens’ battery assembly division to monitor and verify human assembly.
-            </li>
-            <li>
-                Designed and implemented safety-aware robot arm and camera system for collaborative human–robot assembly.
-            </li>
-            <li>
-                Built human action recognition software that interprete and provid corrective feedback on assembly procedures.
-            </li>
-        </ul>
-    </div>
-    <p><br /> <br /></p>
+  <div class="image-container">
+    <img src="../images/siemens_cover.png" alt="Siemens Electronic Assembly Process Tracking Project">
+  </div>
+  <div class="content">
+    <h2><span>Siemens Electronic Assembly Process Tracking Project</span></h2>
+    <ul>
+      <li>Developed integrated system for Siemens’ battery assembly division to monitor and verify human assembly.</li>
+      <li>Designed and implemented safety-aware robot arm and camera system for collaborative human–robot assembly.</li>
+      <li>Built human action recognition software that interprets and provides corrective feedback on assembly procedures.</li>
+    </ul>
+  </div>
 </div>
 
-
-
-<!-- project 2 -->
+<!-- Project 3 -->
 <div class="section">
-    <p><img src="../images/AAAW_cover.png" alt="" width="360" height="200" align="left" vspace="10" hspace="0" style=" padding: 0px 50px 0px 0px; border: #FFFFFF 2px none;" /></p>
-    <div class="content">
-        <h2>Anchor Alignment Adaptive Weighting for Robust Domain Generalization</h2>
-        <ul>
-            <li>
-                Developed novel algorithm leveraging NLP anchors to enhance domain generalization and noise robustness.
-            </li>
-            <li>
-                This research is under review at Transactions on Knowledge and Data Engineering (TKDE).
-            </li>
-        </ul>
-    </div>
-    <p><br /> <br /></p>
+  <div class="image-container">
+    <img src="../images/AAAW_cover.png" alt="Anchor Alignment Adaptive Weighting">
+  </div>
+  <div class="content">
+    <h2><span>Anchor Alignment Adaptive Weighting for Robust Domain Generalization</span></h2>
+    <ul>
+      <li>Developed novel algorithm leveraging NLP anchors to enhance domain generalization and noise robustness.</li>
+      <li>This research is under review at Transactions on Machine Learning Research (TMLR).</li>
+      <li>[<a href="https://arxiv.org/abs/2503.17211">Paper</a>]
+        [<a href="../files/AAAW_Poster.pdf">Poster</a>]
+      </li>
+    </ul>
+  </div>
 </div>
 
-
-
-<!-- project 2 -->
+<!-- Project 4 -->
 <div class="section">
-    <p><img src="../images/fluidic_circuit_cover.png" alt="" width="360" height="240" align="left" vspace="10" hspace="0" style=" padding: 0px 50px 0px 0px; border: #FFFFFF 2px none;" /></p>
-    <div class="content">
-        <h2>Software Tool for Routing Efficiently Advanced Macrofluidics</h2>
-        <ul>
-            <li>
-                Introduce a software based workflow that generates printable fluidic networks automatically.
-            </li>
-            <li>
-                Provide a library of fluidic components to implement any logic circuit.
-            </li>
-            <li>
-                This research is published at Advanced Robotics Research Journal.
-            </li>
-            <li>
-                [<a href="../_projects/fluidic_circuits.html">View more</a>]
-                [<a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adrr.202500065">Paper</a>] 
-                [<a href="https://youtu.be/Q5BHOogOOLo">Video</a>]
-            </li>
-        </ul>
-    </div>
-    <p><br /> <br /></p>
+  <div class="image-container">
+    <img src="../images/fluidic_circuit_cover.png" alt="Software Tool for Routing Efficiently Advanced Macrofluidics">
+  </div>
+  <div class="content">
+    <h2><span>Software Tool for Routing Efficiently Advanced Macrofluidics</span></h2>
+    <ul>
+      <li>Introduce a software based workflow that generates printable fluidic networks automatically.</li>
+      <li>Provide a library of fluidic components to implement any logic circuit.</li>
+      <li>This research is published at Advanced Robotics Research Journal.</li>
+      <li>[<a href="../_projects/fluidic_circuits.html">View more</a>]
+          [<a href="https://advanced.onlinelibrary.wiley.com/doi/10.1002/adrr.202500065">Paper</a>]
+          [<a href="https://youtu.be/Q5BHOogOOLo">Video</a>]
+      </li>
+    </ul>
+  </div>
 </div>
 
-
-
-<!-- project 3 -->
+<!-- Project 5 -->
 <div class="section">
-    <p><img src="../images/close_loop_printing_cover_draft.png" alt="" width="360" height="230" align="left" vspace="10" hspace="0" style=" padding: 0px 50px 0px 0px; border: #FFFFFF 2px none;" /></p>
-    <div class="content">
-        <h2>Vision-based Close-loop FDM Printing for Fabricating Airtight Structures</h2>
-
-        <ul>
-            <li>
-                Introduce an system to greatly improve print quality of FDM printer with computer vision.
-            </li>
-                [<a href="https://arxiv.org/abs/2312.01135">Paper</a>] 
-                [<a href="https://youtu.be/6YeycaHmTKA">Video</a>]
-            </li>
-        </ul>
-    </div>
-    <p><br /> <br /></p>
+  <div class="image-container">
+    <img src="../images/close_loop_printing_cover_draft.png" alt="Vision-based Close-loop FDM Printing">
+  </div>
+  <div class="content">
+    <h2><span>Vision-based Close-loop FDM Printing for Fabricating Airtight Structures</span></h2>
+    <ul>
+      <li>Introduce a system to greatly improve print quality of FDM printer with computer vision.</li>
+      <li>[<a href="https://arxiv.org/abs/2312.01135">Paper</a>]
+          [<a href="https://youtu.be/6YeycaHmTKA">Video</a>]
+      </li>
+    </ul>
+  </div>
 </div>
 
-
-<!-- project 4 -->
+<!-- Project 6 -->
 <div class="section">
-    <p><img src="../images/Wheel_up_cover.gif" alt="" width="360" height="200" align="left" vspace="10" hspace="0" style=" padding: 0px 50px 0px 0px; border: #FFFFFF 2px none;" /></p>
-    <div class="content">
-        <h2>Wheel Up: A Wheelchair Training Simulator for Rehabilitation </h2>
-        <ul>
-            <li>
-                Developed a wheelchair simulator game to provide training for wheelchair users.
-            </li>
-            <!-- <li>
-                This work was published and presented at 2023 IEEE Conference on Games (CoG).
-            </li> -->
-            <li>
-                [<a href="https://ids.wpi.edu/wheel-up/">View more</a>]
-                [<a href="https://users.wpi.edu/~mjchen/attachments/CoG_2023_WheelUp.pdf">Paper</a>] 
-                [<a href="https://youtu.be/MTMOIv_5BZA?si=92_3c0tdg9MI4mnl">Video</a>]
-            </li>
-        </ul>
-    </div>
-    <p><br /> <br /></p>
+  <div class="image-container">
+    <img src="../images/Wheel_up_cover.gif" alt="Wheel Up: A Wheelchair Training Simulator for Rehabilitation">
+  </div>
+  <div class="content">
+    <h2><span>Wheel Up: A Wheelchair Training Simulator for Rehabilitation</span></h2>
+    <ul>
+      <li>Developed a wheelchair simulator game to provide training for wheelchair users.</li>
+      <li>[<a href="https://ids.wpi.edu/wheel-up/">View more</a>]
+          [<a href="https://users.wpi.edu/~mjchen/attachments/CoG_2023_WheelUp.pdf">Paper</a>]
+          [<a href="https://youtu.be/MTMOIv_5BZA?si=92_3c0tdg9MI4mnl">Video</a>]
+      </li>
+    </ul>
+  </div>
 </div>
 
-
-<!-- project 5 -->
+<!-- Project 7 -->
 <div class="section">
-    <p><img src="../images/compliant_mechanism_cover.jpeg" alt="" width="360" height="230" align="left" vspace="10" hspace="0" style=" padding: 0px 50px 0px 0px; border: #FFFFFF 2px none;" /></p>
-    <div class="content">
-        <h2> Fully 3D Printed Fluidic Logic for Soft Robots Using FDM </h2>
-        <ul>
-            <li>
-                Introduce a pneumatically powered compliant mechanism that are analogous to a CMOS transistor.
-            </li>
-            <li>
-                Demonstrate using this device to control various soft robots.
-            </li>
-            <li>
-                [<a href="https://advanced.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/aisy.202400468">Paper</a>] 
-                <!-- [<a href="">Video</a>] -->
-            </li>
-        </ul>
-    </div>
-    <p><br /> <br /></p>
+  <div class="image-container">
+    <img src="../images/compliant_mechanism_cover.jpeg" alt="Fully 3D Printed Fluidic Logic for Soft Robots Using FDM">
+  </div>
+  <div class="content">
+    <h2><span>Fully 3D Printed Fluidic Logic for Soft Robots Using FDM</span></h2>
+    <ul>
+      <li>Introduce a pneumatically powered compliant mechanism that is analogous to a CMOS transistor.</li>
+      <li>Demonstrate using this device to control various soft robots.</li>
+      <li>[<a href="https://advanced.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/aisy.202400468">Paper</a>]</li>
+    </ul>
+  </div>
 </div>
 
-
-<!-- project 6 -->
+<!-- Project 8 -->
 <div class="section">
-    <p><img src="../images/bi_stable_val_cover.png" alt="" width="360" height="280" align="left" vspace="10" hspace="0" style=" padding: 0px 50px 0px 0px; border: #FFFFFF 2px none;" /></p>
-    <div class="content">
-        <h2> Design and Fabrication of Soft Pneumatic Circuits </h2>
-        <ul>
-            <li>
-                Investigate the feasibility of using FDM 3D printing as fabrication method of soft circuits.
-            </li>
-            <li>
-                Introduce a fully 3D-printable design of Bi-stable Valve.
-            </li>
-            <li>
-                [<a href="https://arxiv.org/abs/2312.01131">Paper</a>] 
-                [<a href="https://youtu.be/o5NEBR7vro4">Video</a>]
-            </li>
-        </ul>
-    </div>
-    <p><br /> <br /></p>
+  <div class="image-container">
+    <img src="../images/bi_stable_val_cover.png" alt="Design and Fabrication of Soft Pneumatic Circuits">
+  </div>
+  <div class="content">
+    <h2><span>Design and Fabrication of Soft Pneumatic Circuits</span></h2>
+    <ul>
+      <li>Investigate the feasibility of using FDM 3D printing as fabrication method of soft circuits.</li>
+      <li>Introduce a fully 3D-printable design of Bi-stable Valve.</li>
+      <li>[<a href="https://arxiv.org/abs/2312.01131">Paper</a>]
+          [<a href="https://youtu.be/o5NEBR7vro4">Video</a>]
+      </li>
+    </ul>
+  </div>
 </div>
 
-<p><br /> <br /></p>
-
-
-<!-- project 7 -->
+<!-- Project 9 -->
 <div class="section">
-    <p><img src="../images/biqu_cover.gif" alt="" width="360" height="240" align="left" vspace="10" hspace="0" style=" padding: 0px 50px 0px 0px; border: #FFFFFF 2px none;" /></p>
-    <div class="content">
-        <h2> Quadruped with Supplementary Limb for Enhanced Mobility </h2>
-        <ul>
-            <li>
-                Researched into quadruped motion planning and developing adaptive planner solving at real time.
-            </li>
-            <li>
-                [<a href="https://users.wpi.edu/~mmaghelih/BiQu.html">View more</a>]
-            </li>
-        </ul>
-    </div>
-    <p><br /> <br /></p>
+  <div class="image-container">
+    <img src="../images/biqu_cover.gif" alt="Quadruped with Supplementary Limb for Enhanced Mobility">
+  </div>
+  <div class="content">
+    <h2><span>Quadruped with Supplementary Limb for Enhanced Mobility</span></h2>
+    <ul>
+      <li>Researched into quadruped motion planning and developing adaptive planner solving at real time.</li>
+      <li>[<a href="https://users.wpi.edu/~mmaghelih/BiQu.html">View more</a>]</li>
+    </ul>
+  </div>
 </div>
 
-
-
-<!-- project 8 -->
+<!-- Project 10 -->
 <div class="section">
-    <p><img src="../images/eeg_cover.png" alt="" width="360" height="240" align="left" vspace="10" hspace="0" style=" padding: 0px 50px 0px 0px; border: #FFFFFF 2px none;" /></p>
-    <div class="content">
-        <h2> Adhessive EEG Device for Inhanced Confort </h2>
-        <ul>
-            <li>
-                Built a prototype of an wearable EEG device that is more compact, comfortable for the patient, and low cost.
-            </li>
-            <li>
-                [<a href="https://eprojects.wpi.edu/system/files/project-files/2022/09/Final%20Report.pdf">View more</a>]
-            </li>
-        </ul>
-    </div>
-    <p><br /> <br /></p>
+  <div class="image-container">
+    <img src="../images/eeg_cover.png" alt="Adhesive EEG Device for Enhanced Comfort">
+  </div>
+  <div class="content">
+    <h2><span>Adhesive EEG Device for Enhanced Comfort</span></h2>
+    <ul>
+      <li>Built a prototype of a wearable EEG device that is more compact, comfortable for the patient, and low cost.</li>
+      <li>[<a href="https://eprojects.wpi.edu/system/files/project-files/2022/09/Final%20Report.pdf">View more</a>]</li>
+    </ul>
+  </div>
 </div>
 
+<br/><br/><br/>
 
-<br/>
-<br/>
-<br/>
+
 
 <h1> Class Projects </h1>
 
