@@ -9,23 +9,175 @@
 <body>
     <div id="main" style="padding-bottom:1em; padding-top: 5em; width: 60em; max-width: 70em; margin-left: auto; margin-right: auto;">
         <section>
-            
+
             <h1 style="text-align: center; margin-bottom: 0; color: #4e79a7; font-size: 300%">
-                A3W: Language Anchor-Guided Domain Generalization
+                A<sup>3</sup>W
             </h1>
             <h2 style="text-align: center; white-space: nowrap; font-size: 200%">
-                Robust Learning Under Domain Shift and Noisy Labels
+                Anchor Alignment and Adaptive Weighting <br> for Robust Noisy Domain Generalization
             </h2>
 
-            <!-- Image on top -->
-            <div style="text-align: center; margin-top: 2em; margin-bottom: 2em;">
-                <img src="../images/aaaw_main.png" alt="Illustration of A3W language anchor-guided domain generalization" style="width: 100%; max-width: 60em;">
+            <p style="text-align: center; font-size: 0.9em; line-height: 1.6em; margin-bottom: 0.5em;">
+                Under review at Transactions on Machine Learning Research (TMLR)
+            </p>
+            <p style="text-align: center; font-size: 1em; margin-bottom: 2em;">
+                [<a href="https://arxiv.org/abs/2503.17211">arXiv</a>]
+                [<a href="../files/TMLR_A3W.pdf">PDF</a>]
+                [<a href="../files/AAAW_Poster.pdf">Poster</a>]
+            </p>
+
+
+            <!-- Hero: Figure 1 from paper -->
+            <div style="text-align: center;">
+                <img src="../images/aaaw_figure1.png" alt="Domain shift illustration" style="width: 100%;">
             </div>
 
-            <!-- Concise paragraph -->
-            <p>
-                We propose A3W, a language-anchor–guided method that tackles the combined challenges of domain shift and label noise, improving the reliability of real-world machine learning systems. A3W aligns visual features with NLP-derived semantic anchors and dynamically reweights each sample based on its similarity to these anchors, which suppresses spurious correlations and reduces the influence of noisy labels during training. Across five benchmark datasets with 10–25% synthetic noise, A3W achieves the highest accuracy and outperforms ERM, Mixup, IRM, GroupDRO, and VREx by margins of up to 6–13% depending on the dataset. These results show that semantic anchoring and adaptive weighting significantly enhance robustness to both noise and distribution shift while maintaining stable convergence. My contribution includes developing the anchor-guided weighting strategy, running the full experimental evaluation, and analyzing robustness and noise-sensitivity behavior across all benchmarks.
+            <p style="margin-top: 1.5em;">
+                Real-world machine learning systems face two critical challenges: <b>distribution shift</b> and <b>label noise</b>.
+                Networks tend to overfit to spurious features in the training distribution, and noisy labels exacerbate this
+                by causing existing domain generalization methods to fail at distinguishing invariant features from spurious ones.
+                We propose <b>A<sup>3</sup>W</b> (Anchor Alignment and Adaptive Weighting), a sample reweighting algorithm
+                guided by NLP anchors from pretrained language models.
+                A<sup>3</sup>W leverages semantic representations as domain-invariant priors and dynamically adjusts
+                each sample's contribution based on its distance to the corresponding anchor,
+                improving resilience to both noisy labels and distribution shift.
             </p>
+
+
+
+            <!-- ########## Method ########## -->
+            <hr style="margin-top: 0em;">
+
+            <h3>Method</h3>
+
+            <!-- Three text divs in a row -->
+            <div class="box alt" style="margin-bottom: 1em;">
+                <div class="row 50% uniform" style="width: 100%;">
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33.3%">
+                        <b>1. NLP Anchor Setting</b>
+                        <p style="text-align: left; margin-top: 0.5em;">
+                            Semantic anchors are computed using a pretrained CLIP text encoder.
+                            For each class, a text prompt ("a photo of a [class]") is encoded into a normalized embedding
+                            on the unit hypersphere, providing domain-invariant prior knowledge.
+                        </p>
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33.3%">
+                        <b>2. Anchor Alignment</b>
+                        <p style="text-align: left; margin-top: 0.5em;">
+                            Per-class linear projectors map image features into the same semantic space as the anchors.
+                            An alignment loss maximizes cosine similarity between projected features and their corresponding anchors,
+                            promoting domain-invariant representations.
+                        </p>
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33.3%">
+                        <b>3. Adaptive Weighting</b>
+                        <p style="text-align: left; margin-top: 0.5em;">
+                            Sample weights are computed via softmax over alignment costs with a temperature parameter.
+                            Samples closer to anchors receive higher weight, while noisy outliers are down-weighted.
+                            The final loss combines alignment loss and weighted cross-entropy.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ########## Architecture ########## -->
+            <hr style="margin-top: 0em;">
+
+            <h3>Architecture</h3>
+
+            <div style="text-align: center;">
+                <img src="../images/aaaw_architecture.png" alt="A3W Architecture" style="width: 100%;">
+            </div>
+
+            <p style="margin-top: 1em;">
+                The encoder (Enc.) converts input text into embeddings that serve as fixed NLP anchors.
+                The featurizer (Fea.) extracts image features, which are mapped to the anchor space via per-class projectors.
+                The similarity module computes cosine similarity between projected features and anchors,
+                and the alignment module creates deep copies for adaptive weight computation.
+                The final loss combines alignment loss and weighted cross-entropy classification loss.
+            </p>
+
+
+
+            <!-- ########## Results ########## -->
+            <hr style="margin-top: 0em;">
+
+            <h3>Results</h3>
+
+            <div style="display: flex; gap: 2em; align-items: flex-start;">
+                <div style="flex: 1; text-align: center;">
+                    <img src="../images/aaaw_noise.png" alt="Noise analysis" style="width: 100%;">
+                    <p style="margin-top: 0.5em; font-size: 0.9em;">
+                        A<sup>3</sup>W is most robust to noise injection, with accuracy decreasing by only <b>0.2</b>
+                        when noise increases from 0.1 to 0.25, compared to 0.4-0.5 for other methods.
+                    </p>
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <img src="../images/aaaw_convergence.png" alt="Convergence trajectories" style="width: 100%;">
+                    <p style="margin-top: 0.5em; font-size: 0.9em;">
+                        Convergence trajectories on PACS and VLCS under three random seeds.
+                        A<sup>3</sup>W achieves stable convergence with consistently higher accuracy.
+                    </p>
+                </div>
+            </div>
+
+
+
+            <!-- ########## Feature Analysis ########## -->
+            <hr style="margin-top: 0em;">
+
+            <h3>Feature Clustering</h3>
+
+            <div style="text-align: center;">
+                <img src="../images/aaaw_tsne.png" alt="t-SNE embeddings on PACS" style="width: 100%;">
+            </div>
+
+            <p style="margin-top: 1em;">
+                t-SNE embeddings on PACS. Color indicates class and marker shape indicates domain.
+                From left to right: ERM, IRM, Mixup, and A<sup>3</sup>W.
+                Compared to baselines, A<sup>3</sup>W produces <b>more compact and well-separated clusters</b>
+                across both training and test domains, demonstrating its ability to learn
+                discriminative, domain-invariant features.
+            </p>
+
+
+
+            <!-- ########## Paper ########## -->
+            <hr style="margin-top: 0em;">
+
+            <h3>Paper</h3>
+
+            <p style="margin-bottom: 1em;">
+                Under review at TMLR.
+                Preprint: <a href="https://arxiv.org/abs/2503.17211">arXiv:2503.17211</a>
+            </p>
+
+            <div class="12u$">
+                <a href="../files/TMLR_A3W.pdf">
+                    <span class="image fit" style="border: 1px solid; border-color: #888888;">
+                        <img src="../images/aaaw_paper_stitched.jpg" alt="" />
+                    </span>
+                </a>
+            </div>
+
+
+
+            <!-- ########## Acknowledgements and Contact ########## -->
+
+            <hr style="margin-top: 0em;">
+
+            <h3>Acknowledgements</h3>
+            <p>
+                This work is supported by The Robotics Institute at Carnegie Mellon University.
+            </p>
+
+            <hr style="margin-top: 1em">
+            <h3>Contact</h3>
+            <p>If you have any questions, please feel free to contact <a href="http://lehong-wang.github.io/">Lehong Wang</a>.</p>
+            <hr/>
+
 
         </section>
     </div>
