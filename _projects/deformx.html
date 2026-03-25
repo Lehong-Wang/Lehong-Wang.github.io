@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>DeformX</title>
+    <link rel="stylesheet" href="../assets/css/projects.css" />
+</head>
+
+<body>
+    <div id="main" style="padding-bottom:1em; padding-top: 5em; width: 60em; max-width: 70em; margin-left: auto; margin-right: auto;">
+        <section>
+
+            <h1 style="text-align: center; margin-bottom: 0; color: #4e79a7; font-size: 300%"> DeformX </h1>
+            <h2 style="text-align: center; white-space: nowrap; font-size: 200%"> A Versatile Co-Simulation Framework <br> for Deformable Linear Objects </h2>
+
+            <p style="text-align: center; font-size: 1.1em; line-height: 1.8em; margin-bottom: 0.5em;">
+                <a href="#">Yi Yang</a><sup>1,3,4,*</sup>,
+                <a href="#">Xiang Fei</a><sup>1,*</sup>,
+                <a href="http://lehong-wang.github.io/">Lehong Wang</a><sup>1,*</sup>,
+                <a href="#">Chenhao Li</a><sup>2</sup>,
+                <a href="#">Zilin Dai</a><sup>5</sup>,
+                <a href="#">Henry Kou</a><sup>1</sup>,
+                <a href="#">Howie Choset</a><sup>1</sup>,
+                <a href="#">Lu Li</a><sup>1</sup>
+            </p>
+            <p style="text-align: center; font-size: 0.9em; line-height: 1.6em; margin-bottom: 0.2em;">
+                <sup>1</sup>The Robotics Institute, Carnegie Mellon University &nbsp;
+                <sup>2</sup>Dept. of Mechanical Engineering, Carnegie Mellon University
+            </p>
+            <p style="text-align: center; font-size: 0.9em; line-height: 1.6em; margin-bottom: 1em;">
+                <sup>3</sup>School of Ocean and Civil Engineering, Shanghai Jiao Tong University &nbsp;
+                <sup>4</sup>Zhiyuan College, Shanghai Jiao Tong University &nbsp;
+                <sup>5</sup>Harvard University
+            </p>
+            <p style="text-align: center; font-size: 0.85em; margin-bottom: 2em;">
+                * Equal contribution
+            </p>
+
+
+            <div style="text-align: center;">
+                <img src="../images/deformx_cover.jpg" alt="DeformX Framework Overview" style="width: 100%;">
+            </div>
+
+            <p style="margin-top: 1.5em;">
+                Simulating deformable linear objects (DLOs) such as wires, cables, and ropes with both visual realism and physical accuracy remains a significant challenge.
+                We present <b>DeformX</b>, a co-simulation framework integrating a Cosserat rod physics engine with NVIDIA Isaac Sim.
+                DeformX simulates dynamics, self-collisions, and interactions with free-form meshes,
+                while using mesh skinning to map rod deformations to CAD models for high-fidelity visualization.
+                It is the first framework combining realistic visualization, principled physics, and robot learning compatibility.
+            </p>
+
+
+
+            <!-- ########## Highlights ########## -->
+            <hr style="margin-top: 0em;">
+
+            <h3>Key Contributions</h3>
+
+            <!-- Co-Simulation Framework: own row, image left, text right -->
+            <div style="display: flex; align-items: flex-start; margin-bottom: 2em;">
+                <img src="../images/deformx_system.png" alt="Co-Simulation Framework" style="width: 50%; flex-shrink: 0; margin-right: 2em;">
+                <div>
+                    <b style="font-size: 1.1em;">Co-Simulation Framework</b>
+                    <p style="margin-top: 0.5em;">
+                        Integrates a Cosserat rod physics engine with NVIDIA Isaac Sim via a multi-rate coupling scheme,
+                        bridging time scales of 10<sup>-5</sup>s (DLO physics) and 10<sup>-2</sup>s (rendering/robot control).
+                        A modular Python interface enables scene authoring with support for dynamics, self-collisions,
+                        and interactions with free-form meshes.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Other three contributions on the same row -->
+            <div class="box alt" style="margin-bottom: 1em;">
+                <div class="row 50% uniform" style="width: 100%;">
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33.3%">
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/deformx_figure2.png" alt="" />
+                        </span>
+                        <b>Mesh Skinning</b><br>
+                        Maps discrete Cosserat rod deformations onto CAD models for high-fidelity visualization.
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33.3%">
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/deformx_contact.png" alt="" />
+                        </span>
+                        <b>Free-Form Mesh Contact</b><br>
+                        Supports DLO interactions with arbitrary meshes using BVH-accelerated collision detection.
+                    </div>
+                    <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33.3%">
+                        <span class="image fit" style="margin-bottom: 0.5em;">
+                            <img src="../images/deformx_pipeline.jpg" alt="" />
+                        </span>
+                        <b>WireSeg-32k Dataset</b><br>
+                        32,000 synthetic wire segmentation images with instance masks across Easy/Medium/Hard tiers.
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- ########## Dataset & Segmentation Results (same row) ########## -->
+            <hr style="margin-top: 0em;">
+
+            <h3>WireSeg-32k Dataset & Segmentation Results</h3>
+
+            <div style="display: flex; gap: 2em; align-items: flex-start;">
+                <div style="flex: 1; text-align: center;">
+                    <img src="../images/deformx_dataset.jpg" alt="WireSeg-32k Dataset" style="width: 100%;">
+                    <p style="margin-top: 0.5em; font-size: 0.9em;">
+                        32,000 synthetic images from 300+ simulation runs across Easy/Medium/Hard tiers
+                        in wire-on-plane, flying wires, and data center scenarios.
+                    </p>
+                </div>
+                <div style="flex: 1; text-align: center;">
+                    <img src="../images/deformx_segmentation.jpg" alt="SAM3 Inference Results" style="width: 100%;">
+                    <p style="margin-top: 0.5em; font-size: 0.9em;">
+                        Fine-tuning SAM3 on DeformX-generated data yields <b>10.2% mAP@75 improvement</b>
+                        in real-image wire instance segmentation.
+                    </p>
+                </div>
+            </div>
+
+
+
+            <!-- ########## Robot Learning ########## -->
+            <hr style="margin-top: 0em;">
+
+            <h3>Sim-to-Real Robot Learning</h3>
+
+            <div style="display: flex; align-items: flex-start; gap: 2em;">
+                <div style="flex: 1; text-align: center;">
+                    <img src="../images/deformx_sin_motion.jpg" alt="Robot-driven rope experiment" style="width: 100%;">
+                    <p style="margin-top: 0.5em; font-size: 0.9em;">Physics validation: robot-driven rope motion with motion capture comparison.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 1.5em;">
+                <img src="../images/deformx_demo3.jpg" alt="Goal-conditioned dynamic rope manipulation" style="width: 100%;">
+                <p style="margin-top: 0.5em; font-size: 0.9em;">Goal-conditioned dynamic rope manipulation: simulation vs. real-world on UR5e.</p>
+            </div>
+
+            <p style="margin-top: 1em;">
+                A rope-swinging hit-target policy trained entirely in DeformX achieves <b>6.6 cm mean target-hitting error</b>
+                when deployed on a real UR5e robot, demonstrating effective sim-to-real transfer.
+            </p>
+
+
+
+            <!-- ########## Paper ########## -->
+            <hr style="margin-top: 0em;">
+
+            <h3>Paper</h3>
+
+            <p style="margin-bottom: 1em;">
+                Submitted to IROS 2025.
+                <!-- <br>Preprint: <a href="#">arXiv</a> -->
+            </p>
+
+            <div class="12u$">
+                <a href="../files/DeformX.pdf">
+                    <span class="image fit" style="border: 1px solid; border-color: #888888;">
+                        <img src="../images/deformx_paper_stitched.jpg" alt="" />
+                    </span>
+                </a>
+            </div>
+
+
+
+            <!-- ########## Acknowledgements and Contact ########## -->
+
+            <hr style="margin-top: 0em;">
+
+            <h3>Acknowledgements</h3>
+            <p>
+                This work is supported by The Robotics Institute at Carnegie Mellon University.
+            </p>
+
+            <hr style="margin-top: 1em">
+            <h3>Contact</h3>
+            <p>If you have any questions, please feel free to contact <a href="http://lehong-wang.github.io/">Lehong Wang</a>.</p>
+            <hr/>
+
+
+        </section>
+    </div>
+</body>
+
+</html>
