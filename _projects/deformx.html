@@ -54,18 +54,18 @@
             <!-- ########## Highlights ########## -->
             <hr style="margin-top: 0em;">
 
-            <h3>Key Contributions</h3>
+            <h2>Key Contributions</h2>
 
             <!-- Co-Simulation Framework: own row, image left, text right -->
             <div style="display: flex; align-items: flex-start; margin-bottom: 2em;">
-                <img src="../images/deformx_system.png" alt="Co-Simulation Framework" style="width: 50%; flex-shrink: 0; margin-right: 2em;">
+                <img src="../images/deformx_system.png" alt="Co-Simulation Framework" style="width: 60%; flex-shrink: 0; margin-right: 2em;">
                 <div>
                     <b style="font-size: 1.1em;">Co-Simulation Framework</b>
                     <p style="margin-top: 0.5em;">
-                        Integrates a Cosserat rod physics engine with NVIDIA Isaac Sim via a multi-rate coupling scheme,
-                        bridging time scales of 10<sup>-5</sup>s (DLO physics) and 10<sup>-2</sup>s (rendering/robot control).
-                        A modular Python interface enables scene authoring with support for dynamics, self-collisions,
-                        and interactions with free-form meshes.
+                        Integrates a Cosserat rod physics engine with NVIDIA Isaac Sim via a multi-rate coupling scheme.
+                        <!-- ,bridging time scales of 10<sup>-5</sup>s (DLO physics) and 10<sup>-2</sup>s (rendering/robot control). -->
+                        <!-- A modular Python interface enables scene authoring with support for dynamics, self-collisions, -->
+                        <!-- and interactions with free-form meshes. -->
                     </p>
                 </div>
             </div>
@@ -85,14 +85,14 @@
                             <img src="../images/deformx_contact.png" alt="" />
                         </span>
                         <b>Free-Form Mesh Contact</b><br>
-                        Supports DLO interactions with arbitrary meshes using BVH-accelerated collision detection.
+                        Supports realistic interactions between DLOs and with arbitrary meshes.
                     </div>
                     <div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33.3%">
                         <span class="image fit" style="margin-bottom: 0.5em;">
                             <img src="../images/deformx_pipeline.jpg" alt="" />
                         </span>
                         <b>WireSeg-32k Dataset</b><br>
-                        32,000 synthetic wire segmentation images with instance masks across Easy/Medium/Hard tiers.
+                        32,000 synthetic wire segmentation images with instance masks and depth across Easy/Medium/Hard tiers.
                     </div>
                 </div>
             </div>
@@ -102,7 +102,7 @@
             <!-- ########## Dataset & Segmentation Results (same row) ########## -->
             <hr style="margin-top: 0em;">
 
-            <h3>WireSeg-32k Dataset & Segmentation Results</h3>
+            <h2>WireSeg-32k Dataset & Segmentation Results</h2>
 
             <div style="display: flex; gap: 2em; align-items: flex-start;">
                 <div style="flex: 1; text-align: center;">
@@ -126,16 +126,16 @@
             <!-- ########## Robot Learning ########## -->
             <hr style="margin-top: 0em;">
 
-            <h3>Sim-to-Real Robot Learning</h3>
+            <h2>Sim-to-Real Robot Learning</h2>
 
-            <div style="display: flex; align-items: flex-start; gap: 2em;">
-                <div style="flex: 1; text-align: center;">
-                    <img src="../images/deformx_sin_motion.jpg" alt="Robot-driven rope experiment" style="width: 100%;">
-                    <p style="margin-top: 0.5em; font-size: 0.9em;">Physics validation: robot-driven rope motion with motion capture comparison.</p>
-                </div>
+            <div style="width: 70%; margin: 0 auto; text-align: center;">
+                <img src="../images/deformx_sin_motion.jpg" alt="Robot-driven rope experiment" style="width: 100%;">
+                <p style="margin-top: 0.5em; font-size: 0.9em;">
+                    Physics validation: robot-driven rope motion with motion capture comparison.
+                </p>
             </div>
 
-            <div style="text-align: center; margin-top: 1.5em;">
+            <div style="width: 70%; margin: 0 auto; text-align: center;">
                 <img src="../images/deformx_demo3.jpg" alt="Goal-conditioned dynamic rope manipulation" style="width: 100%;">
                 <p style="margin-top: 0.5em; font-size: 0.9em;">Goal-conditioned dynamic rope manipulation: simulation vs. real-world on UR5e.</p>
             </div>
@@ -150,12 +150,12 @@
             <!-- ########## Paper ########## -->
             <hr style="margin-top: 0em;">
 
-            <h3>Paper</h3>
+            <h2>Paper</h2>
 
-            <p style="margin-bottom: 1em;">
-                Submitted to IROS 2025.
+            <!-- <p style="margin-bottom: 1em;"> -->
+                <!-- Submitted to IROS 2026. -->
                 <!-- <br>Preprint: <a href="#">arXiv</a> -->
-            </p>
+            <!-- </p> -->
 
             <div class="12u$">
                 <a href="../files/DeformX.pdf">
@@ -171,13 +171,13 @@
 
             <hr style="margin-top: 0em;">
 
-            <h3>Acknowledgements</h3>
+            <h2>Acknowledgements</h2>
             <p>
-                This work is supported by The Robotics Institute at Carnegie Mellon University.
+                This work is supported by Biorobotics Lab at Carnegie Mellon University Robotics Institute.
             </p>
 
             <hr style="margin-top: 1em">
-            <h3>Contact</h3>
+            <h2>Contact</h2>
             <p>If you have any questions, please feel free to contact <a href="http://lehong-wang.github.io/">Lehong Wang</a>.</p>
             <hr/>
 
