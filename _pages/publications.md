@@ -18,7 +18,10 @@ author_profile: true
 <!-- # Research -->
 
 
-Yi Yang\*, Xiang Fei\*, **Lehong Wang\***, Chenhao Li, Zilin Dai, Henry Kou, Howie Choset, and Lu Li. [DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects.]() IROS 2026 (under review).
+**Lehong Wang\***, Yi Yang\*, Xiang Fei\*, Chenhao Li, Zilin Dai, Henry Kou, Lu Li, and Howie Choset. [DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects.]() IROS 2026 (**Oral Presentation**).
+
+Zilin Dai, **Lehong Wang**, Xiang Fei, Yi Yang.
+[WireSeg-32K: A Physics-Grounded Synthetic Dataset for Wire Instance Segmentation](https://syndata4cv.github.io/) CVPR 2026 (Workshop Contribution).
 
 **Lehong Wang**, Zilin Dai, Yuchen Wu, Ye Jin, Colm Barry, Tina Tian, Fujun Ruan, Shricharan Shastry, Rahul Panat, Gary K. Fedder, Howie Choset, and Lu Li. [From Flat to Form-Fitting: A Computational Geometry Approach to 3D Wearable Electronic Design and Rapid Prototyping.](https://ieeexplore.ieee.org/abstract/document/11163901) CASE 2025 (**Oral Presentation**).
 
