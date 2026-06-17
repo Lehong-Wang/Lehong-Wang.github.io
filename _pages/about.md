@@ -17,13 +17,13 @@ My research focuses on robotic motion planning and perception, with applications
 
 # News
 
-- 06/16/2026: Our paper: *DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects* has been accepted by **IROS 2026**! [\[Project\]](https://deformx.github.io/)
+- 06/16/2026: Our paper: *DeformX: A Versatile Co-Simulation Framework for Deformable Linear Objects* has been accepted by **IROS 2026** as **Oral Presentation**! [\[Project\]](https://deformx.github.io/)
 
-- 06/04/2026: We presented our paper: *WireSeg-32K: A Physics-Grounded Synthetic Dataset for Wire Instance Segmentation* at the **Synthetic Data for Computer Vision** workshop at **CVPR 2026**! [\[Workshop\]](https://syndata4cv.github.io/)
+- 06/04/2026: We presented our paper: *WireSeg-32K: A Physics-Grounded Synthetic Dataset for Wire Instance Segmentation* at the Synthetic Data for Computer Vision workshop at **CVPR 2026**! [\[Workshop\]](https://syndata4cv.github.io/)
 
 - 09/10/2025: Our paper: *Auto-Routing Fluidic Printed Circuit Boards* is published at **Advanced Robotics Research** Journal! [\[Paper\]](https://advanced.onlinelibrary.wiley.com/doi/10.1002/adrr.202500065)
 
-- 08/20/2025: Our paper: *From Flat to Form-Fitting: A Computational Geometry Approach to 3D Conformal Electronics Design and Rapid Prototyping* is published at **IEEE CASE 2025**! [\[Video Abstract\]](https://youtu.be/aUtIGDBdTAk)
+- 08/20/2025: Our paper: *From Flat to Form-Fitting: A Computational Geometry Approach to 3D Conformal Electronics Design and Rapid Prototyping* is published as **Oral Presentation** at **IEEE CASE 2025**! [\[Video Abstract\]](https://youtu.be/aUtIGDBdTAk)
 
 - 11/15/2024: Our paper: *FDM-Printed CMOS Logic Gates from Flexing Beam
 Mechanisms for the Control of Soft Robotic Systems* is published at **Advanced Intelligent Systems** Journal! [\[Paper\]](https://advanced.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/aisy.202400468)
